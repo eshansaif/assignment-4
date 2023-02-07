@@ -92,7 +92,7 @@ function findingBadData(array) {
 
 /*
                 <--- Problem-5: gemsToDiamond() --->
--->This function is to check ....
+-->This function is to check the number of total number of Diamonds
 */
 
 function gemsToDiamond(gemsOfFist, gemsOfSecond, gemsOfThird) {
@@ -104,14 +104,14 @@ function gemsToDiamond(gemsOfFist, gemsOfSecond, gemsOfThird) {
     const secondFriendGems = gemsOfSecond * 32;
     const thirdFriendGems = gemsOfThird * 43;
 
-    const totalGems = firstFriendGems + secondFriendGems + thirdFriendGems;
+    const totalDiamonds = firstFriendGems + secondFriendGems + thirdFriendGems;
 
-    if (totalGems >= 1000 * 2) {
-        return totalGems - 2000;
-    } else if (totalGems < 1000 * 2) {
-        return totalGems;
+    if (totalDiamonds >= 1000 * 2) {
+        return totalDiamonds - 2000;
+    } else if (totalDiamonds < 1000 * 2) {
+        return totalDiamonds;
     }
 }
 
-// const output = gemsToDiamond(100, 5, 1);
+// const output = gemsToDiamond(20, 200, 50);
 // console.log(output);
